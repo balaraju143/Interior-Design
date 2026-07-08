@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Stackly Interior Atelier</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/admin-dashboard.css">
+
+</head>
+
+<body>
+
+<!--=========================================
+        MOBILE MENU
+==========================================-->
+
+<button id="menuToggle"
+        class="menu-toggle">
+
+    <i class="fa-solid fa-bars"></i>
+
+</button>
+
+<!--=========================================
+        OVERLAY
+==========================================-->
+
+<div class="sidebar-overlay"></div>
+
+<!--=========================================
+        DASHBOARD
+==========================================-->
+
+<div class="dashboard">
+
+<!--=========================================
+        SIDEBAR
+==========================================-->
+
+<aside class="sidebar">
+
+<div class="sidebar-top">
+
+<a href="admin-dashboard.html"
+   class="logo">
+
+<img src="images/red-logo.webp"
+     alt="Stackly Logo">
+
+</a>
+
+<button class="close-sidebar">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+<!-- USER -->
+
+<div class="user-box">
+
+<div class="user-avatar">
+
+BA
+
+</div>
+
+<div class="user-info">
+
+<h3>
+
+Balaraju
+
+</h3>
+
+<p>
+
+Administrator
+
+</p>
+
+</div>
+
+</div>
+
+<!-- MENU -->
+
+<ul class="sidebar-menu">
+
+<li class="active">
+
+<a href="admin-dashboard.html">
+
+<i class="fa-solid fa-table-columns"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-layer-group"></i>
+
+Projects
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-users"></i>
+
+Clients
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Analytics
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Appointments
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-envelope"></i>
+
+Messages
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="sidebar-card">
+
+<h4>
+
+Stackly Interior
+
+</h4>
+
+<p>
+
+Luxury Design Dashboard
+
+</p>
+
+</div>
+
+</aside>
+
+<!--=========================================
+        MAIN CONTENT
+==========================================-->
+
+<main class="main-content">
+
+<!-- HEADER -->
+
+<header class="dashboard-header">
+
+<div>
+
+<h1>
+
+Operations Dashboard
+
+</h1>
+
+<p>
+
+Welcome back, Balaraju 👋
+
+</p>
+
+</div>
+
+<div class="header-actions">
+
+    <button onclick="window.location.href='404.html'">
+
+        <i class="fa-solid fa-bell"></i>
+
+    </button>
+
+    <button onclick="window.location.href='404.html'">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+    </button>
+
+    <button onclick="window.location.href='404.html'">
+
+        <i class="fa-solid fa-user"></i>
+
+    </button>
+
+</div>
+</header>
+
+
+
+<!-- STATS -->
+
+<section class="stats-grid">
+
+<div class="stat-card">
+
+<div>
+
+<h5>
+
+Active Projects
+
+</h5>
+
+<h2>
+
+24
+
+</h2>
+
+<span>
+
++8% this month
+
+</span>
+
+</div>
+
+<i class="fa-solid fa-building"></i>
+
+</div>
+
+<div class="stat-card">
+
+<div>
+
+<h5>
+
+Revenue
+
+</h5>
+
+<h2>
+
+₹8.6L
+
+</h2>
+
+<span>
+
++15% growth
+
+</span>
+
+</div>
+
+<i class="fa-solid fa-indian-rupee-sign"></i>
+
+</div>
+
+<div class="stat-card">
+
+<div>
+
+<h5>
+
+Clients
+
+</h5>
+
+<h2>
+
+146
+
+</h2>
+
+<span>
+
+12 New
+
+</span>
+
+</div>
+
+<i class="fa-solid fa-users"></i>
+
+</div>
+
+<div class="stat-card">
+
+<div>
+
+<h5>
+
+Completed
+
+</h5>
+
+<h2>
+
+92%
+
+</h2>
+
+<span>
+
+Excellent
+
+</span>
+
+</div>
+
+<i class="fa-solid fa-award"></i>
+
+</div>
+
+</section>
+<!--=========================================
+        DASHBOARD CONTENT
+==========================================-->
+
+<section class="dashboard-grid">
+
+    <!--=========================
+            Revenue
+    ==========================-->
+
+    <div class="dashboard-card revenue-card">
+
+        <div class="card-header">
+
+            <h3>
+
+                Revenue Overview
+
+            </h3>
+
+            <a href="404.html">
+
+                View Report
+
+            </a>
+
+        </div>
+
+        <div class="chart-placeholder">
+
+            <div class="chart-bars">
+
+                <span style="height:45%"></span>
+
+                <span style="height:70%"></span>
+
+                <span style="height:60%"></span>
+
+                <span style="height:88%"></span>
+
+                <span style="height:65%"></span>
+
+                <span style="height:95%"></span>
+
+                <span style="height:78%"></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--=========================
+            Recent Projects
+    ==========================-->
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <h3>
+
+                Recent Projects
+
+            </h3>
+
+        </div>
+
+        <div class="project-list">
+
+            <div class="project-item">
+
+                <div>
+
+                    <h4>
+
+                        Luxury Villa
+
+                    </h4>
+
+                    <p>
+
+                        Hyderabad
+
+                    </p>
+
+                </div>
+
+                <span class="status progress">
+
+                    In Progress
+
+                </span>
+
+            </div>
+
+            <div class="project-item">
+
+                <div>
+
+                    <h4>
+
+                        Modern Office
+
+                    </h4>
+
+                    <p>
+
+                        Bangalore
+
+                    </p>
+
+                </div>
+
+                <span class="status completed">
+
+                    Completed
+
+                </span>
+
+            </div>
+
+            <div class="project-item">
+
+                <div>
+
+                    <h4>
+
+                        Hotel Interior
+
+                    </h4>
+
+                    <p>
+
+                        Chennai
+
+                    </p>
+
+                </div>
+
+                <span class="status pending">
+
+                    Pending
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+        LOWER GRID
+==========================================-->
+
+<section class="bottom-grid">
+
+    <!--=========================
+            Team
+    ==========================-->
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <h3>
+
+                Team Performance
+
+            </h3>
+
+        </div>
+
+        <div class="progress-item">
+
+            <span>
+
+                Designers
+
+            </span>
+
+            <div class="progress">
+
+                <div style="width:95%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="progress-item">
+
+            <span>
+
+                Architects
+
+            </span>
+
+            <div class="progress">
+
+                <div style="width:82%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="progress-item">
+
+            <span>
+
+                Developers
+
+            </span>
+
+            <div class="progress">
+
+                <div style="width:90%"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--=========================
+            Meetings
+    ==========================-->
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <h3>
+
+                Today's Schedule
+
+            </h3>
+
+        </div>
+
+        <ul class="meeting-list">
+
+            <li>
+
+                10:00 AM
+
+                <span>
+
+                    Client Discussion
+
+                </span>
+
+            </li>
+
+            <li>
+
+                12:30 PM
+
+                <span>
+
+                    Interior Review
+
+                </span>
+
+            </li>
+
+            <li>
+
+                03:00 PM
+
+                <span>
+
+                    Project Planning
+
+                </span>
+
+            </li>
+
+            <li>
+
+                05:30 PM
+
+                <span>
+
+                    Team Meeting
+
+                </span>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+
+</html>

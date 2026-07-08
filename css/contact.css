@@ -1,0 +1,2625 @@
+/*=========================================
+        CONTACT HERO
+=========================================*/
+/*=========================================
+        CONTACT HERO
+=========================================*/
+
+.contact-hero{
+
+    position:relative;
+
+    padding:140px 0 120px;
+
+    overflow:hidden;
+
+    background:url("../images/design.webp") center center/cover no-repeat;
+
+}
+.contact-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        rgba(20,20,20,.82),
+
+        rgba(20,20,20,.55),
+
+        rgba(20,20,20,.35)
+
+    );
+
+    z-index:1;
+
+}
+.contact-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    top:-250px;
+
+    right:-180px;
+
+    filter:blur(10px);
+
+}
+/*=========================================
+        GRID
+=========================================*/
+
+.contact-hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+        LEFT CONTENT
+=========================================*/
+
+.contact-hero-content{
+
+    max-width:580px;
+
+}
+
+.contact-hero-content h1{
+
+    font-size:68px;
+
+    line-height:1.08;
+
+    color:#fff;
+
+    margin:25px 0;
+
+    font-weight:800;
+
+}
+
+.contact-hero-content p{
+
+    font-size:18px;
+
+      color:rgba(255,255,255,.82);
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+/*=========================================
+        BUTTONS
+=========================================*/
+
+.contact-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-buttons .primary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 38px;
+
+    background:#c81111;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(200,17,17,.25);
+
+}
+
+.contact-buttons .secondary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px 38px;
+
+    border:2px solid #c81111;
+
+    color:#c81111;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.4s;
+
+}
+
+/*=========================================
+        RIGHT GRID
+=========================================*/
+
+.contact-hero-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+/*=========================================
+        CONTACT CARD
+=========================================*/
+
+.contact-info-card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:28px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    transition:.45s cubic-bezier(.25,1,.5,1);
+
+}
+
+/*=========================================
+        ICON
+=========================================*/
+
+.contact-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    background:#c81111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:30px;
+
+    box-shadow:0 15px 35px rgba(200,17,17,.25);
+
+}
+
+/*=========================================
+        CARD CONTENT
+=========================================*/
+
+.contact-info-card h3{
+
+    font-size:24px;
+
+    color:#fff;
+
+    margin-bottom:12px;
+
+}
+
+.contact-info-card p{
+
+    color:rgba(255,255,255,.82);
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+/*=========================================
+        HERO REVEAL
+=========================================*/
+
+.contact-hero-content{
+
+    opacity:0;
+
+    transform:translateX(-80px);
+
+    transition:1.2s cubic-bezier(.25,1,.5,1);
+
+}
+
+.contact-hero-content.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*=========================================
+        CONTACT CARDS ANIMATION
+=========================================*/
+
+.contact-info-card{
+
+    opacity:0;
+
+    transition:1s cubic-bezier(.25,1,.5,1);
+
+}
+
+.contact-info-card:nth-child(1){
+
+    transform:translateY(-80px);
+
+}
+
+.contact-info-card:nth-child(2){
+
+    transform:translateX(80px);
+
+}
+
+.contact-info-card:nth-child(3){
+
+    transform:translateX(-80px);
+
+}
+
+.contact-info-card:nth-child(4){
+
+    transform:translateY(80px);
+
+}
+
+.contact-info-card.show{
+
+    opacity:1;
+
+    transform:translate(0);
+
+}
+
+/*=========================================
+        CARD HOVER
+=========================================*/
+
+.contact-info-card:hover{
+
+    transform:translateY(-12px);
+
+    background:#c81111;
+
+    box-shadow:0 35px 70px rgba(200,17,17,.25);
+
+}
+
+.contact-info-card:hover h3,
+
+.contact-info-card:hover p{
+
+    color:#fff;
+
+}
+
+.contact-info-card:hover .contact-icon{
+
+    background:#fff;
+
+    color:#c81111;
+
+    transform:rotate(10deg) scale(1.1);
+
+}
+
+/*=========================================
+        ICON ANIMATION
+=========================================*/
+
+.contact-icon{
+
+    animation:iconFloat 4s ease-in-out infinite;
+
+    transition:.4s;
+
+}
+
+@keyframes iconFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+/*=========================================
+        BUTTON EFFECTS
+=========================================*/
+
+.contact-buttons .primary-btn::after{
+
+    content:"→";
+
+    margin-left:10px;
+
+    transition:.35s;
+
+}
+
+.contact-buttons .primary-btn:hover{
+
+    background:#1c1a19;
+
+    transform:translateY(-5px);
+
+}
+
+.contact-buttons .primary-btn:hover::after{
+
+    transform:translateX(8px);
+
+}
+
+.contact-buttons .secondary-btn::after{
+
+    content:"↗";
+
+    margin-left:10px;
+
+    transition:.35s;
+
+}
+
+.contact-buttons .secondary-btn:hover{
+
+    background:#c81111;
+
+    color:#fff;
+
+}
+
+.contact-buttons .secondary-btn:hover::after{
+
+    transform:rotate(45deg);
+
+}
+
+/*=========================================
+        TABLET
+=========================================*/
+
+@media(max-width:991px){
+
+.contact-hero-grid{
+
+grid-template-columns:1fr;
+
+gap:60px;
+
+}
+
+.contact-hero-content{
+
+max-width:100%;
+
+text-align:center;
+
+}
+
+.contact-buttons{
+
+justify-content:center;
+
+}
+
+.contact-hero-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-hero-content h1{
+
+font-size:54px;
+
+}
+
+}
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.contact-hero{
+
+padding:90px 0;
+margin-top: 90px;
+
+}
+
+.contact-hero-content h1{
+
+font-size:40px;
+
+line-height:1.2;
+
+}
+
+.contact-hero-content p{
+
+font-size:16px;
+
+}
+
+.contact-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.contact-buttons a{
+
+width:260px;
+
+}
+
+.contact-hero-cards{
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.contact-info-card{
+
+padding:30px;
+
+}
+
+.contact-icon{
+
+width:70px;
+
+height:70px;
+
+font-size:26px;
+
+}
+
+}
+
+/*=========================================
+        SMALL MOBILE
+=========================================*/
+
+@media(max-width:480px){
+
+.contact-hero{
+
+padding:70px 0;
+
+}
+
+.contact-hero-content h1{
+
+font-size:32px;
+
+}
+
+.contact-buttons a{
+
+width:100%;
+
+}
+
+.contact-info-card{
+
+padding:25px;
+
+}
+
+.contact-icon{
+
+width:60px;
+
+height:60px;
+
+font-size:22px;
+
+}
+
+.contact-info-card h3{
+
+font-size:22px;
+
+}
+
+.contact-info-card p{
+
+font-size:15px;
+
+}
+
+}
+
+
+/*=========================================
+        EXPERIENCE BADGE
+=========================================*/
+
+.experience-badge{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:35px;
+
+    width:200px;
+
+    height:200px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.experience-badge h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#c81111;
+
+    line-height:1;
+
+    margin:0 0 10px;
+
+}
+
+.experience-badge p{
+
+    width:100%;
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+    color:#555;
+
+    font-weight:500;
+
+    word-break:break-word;
+
+}
+
+/*=========================================
+        CONTACT FORM SECTION
+=========================================*/
+
+.contact-form-section{
+
+    padding:120px 0;
+
+    background:linear-gradient(180deg,#ffffff,#fdf6f6,#ffffff);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.contact-form-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(200,17,17,.05);
+
+    top:-180px;
+
+    left:-120px;
+
+}
+
+.contact-form-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(200,17,17,.04);
+
+    bottom:-120px;
+
+    right:-120px;
+
+}
+
+/*=========================================
+        WRAPPER
+=========================================*/
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+        LEFT IMAGE
+=========================================*/
+
+.contact-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.15);
+
+}
+
+.contact-image img{
+
+    width:100%;
+
+    height:760px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:1s ease;
+
+}
+
+/*=========================================
+        EXPERIENCE BADGE
+=========================================*/
+
+.experience-badge{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:35px;
+
+    width:190px;
+
+    height:190px;
+
+    background:#ffffff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.experience-badge h2{
+
+    font-size:58px;
+
+    color:#c81111;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+.experience-badge p{
+
+    color:#555;
+
+    line-height:1.6;
+
+    font-size:15px;
+
+}
+
+/*=========================================
+        FORM BOX
+=========================================*/
+
+.contact-form-box{
+
+    background:#ffffff;
+
+    padding:55px;
+
+    border-radius:30px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.08);
+
+}
+
+.contact-form-box h2{
+
+    font-size:50px;
+
+    line-height:1.2;
+
+    color:#222;
+
+    margin:20px 0;
+
+}
+
+.contact-form-box p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+/*=========================================
+        FORM
+=========================================*/
+
+.studio-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.input-group{
+
+    position:relative;
+
+}
+
+/*=========================================
+        INPUTS
+=========================================*/
+
+.studio-form input,
+
+.studio-form textarea,
+
+.studio-form select{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border:2px solid #ececec;
+
+    border-radius:16px;
+
+    background:#fff;
+
+    font-size:16px;
+
+    color:#222;
+
+    outline:none;
+
+    transition:.35s;
+
+    font-family:inherit;
+
+}
+
+.studio-form textarea{
+
+    resize:none;
+
+    min-height:170px;
+
+}
+
+.studio-form input::placeholder,
+
+.studio-form textarea::placeholder{
+
+    color:#888;
+
+}
+
+/*=========================================
+        CUSTOM SELECT
+=========================================*/
+
+.custom-select{
+
+    position:relative;
+
+}
+
+.custom-select select{
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    -moz-appearance:none;
+
+    cursor:pointer;
+
+    padding-right:60px;
+
+}
+
+.custom-select::after{
+
+    content:"▼";
+
+    position:absolute;
+
+    right:22px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#c81111;
+
+    font-size:13px;
+
+    pointer-events:none;
+
+}
+/*=========================================
+        INPUT FOCUS
+=========================================*/
+
+.studio-form input:focus,
+.studio-form textarea:focus,
+.studio-form select:focus{
+
+    border-color:#c81111;
+
+    box-shadow:0 0 0 6px rgba(200,17,17,.08);
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+        IMAGE HOVER
+=========================================*/
+
+.contact-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+        EXPERIENCE BADGE
+=========================================*/
+
+.experience-badge{
+
+    animation:badgeFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes badgeFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+/*=========================================
+        SUBMIT BUTTON
+=========================================*/
+
+.submit-btn{
+
+    width:100%;
+
+    height:62px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#c81111;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 18px 40px rgba(200,17,17,.25);
+
+}
+
+.submit-btn::after{
+
+    content:" →";
+
+    transition:.4s;
+
+}
+
+.submit-btn:hover{
+
+    background:#111;
+
+    transform:translateY(-5px);
+
+}
+
+.submit-btn:hover::after{
+
+    margin-left:8px;
+
+}
+
+/*=========================================
+        ERROR MESSAGE
+=========================================*/
+
+.error-message{
+
+    display:block;
+
+    min-height:22px;
+
+    margin-top:8px;
+
+    color:#c81111;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/*=========================================
+        SUCCESS MESSAGE
+=========================================*/
+
+.success-message{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#0a8a3a;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    min-height:24px;
+
+}
+
+/*=========================================
+        FORM REVEAL
+=========================================*/
+
+.contact-form-box{
+
+    opacity:1;
+
+    transform:translateX(80px);
+
+    transition:1.2s cubic-bezier(.25,1,.5,1);
+
+}
+
+.contact-image{
+
+    opacity:1;
+
+    transform:translateX(-80px);
+
+    transition:1.2s cubic-bezier(.25,1,.5,1);
+
+}
+
+.contact-form-box.show,
+.contact-image.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+/*=========================================
+        TABLET
+=========================================*/
+
+@media(max-width:991px){
+
+.contact-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.contact-image img{
+
+    height:500px;
+
+}
+
+.contact-form-box{
+
+    padding:40px;
+
+}
+
+.contact-form-box h2{
+
+    font-size:40px;
+
+}
+
+}
+
+/*=========================================
+        MOBILE
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.contact-form-section{
+
+    padding:90px 0;
+
+}
+
+/* IMPORTANT FIX */
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+/* IMAGE */
+
+.contact-image{
+
+    width:100%;
+
+    margin:0 auto;
+
+}
+
+.contact-image img{
+
+    width:100%;
+
+    height:320px;
+
+    display:block;
+
+    border-radius:25px;
+
+}
+
+/* BADGE */
+
+.experience-badge{
+
+    width:130px;
+
+    height:130px;
+
+    left:20px;
+
+    bottom:20px;
+
+}
+
+.experience-badge h2{
+
+    font-size:34px;
+
+}
+
+.experience-badge p{
+
+    font-size:12px;
+
+}
+
+/* FORM */
+
+.contact-form-box{
+
+    width:100%;
+
+    margin:0 auto;
+
+    padding:30px 22px;
+
+}
+
+.contact-form-box .section-tag{
+
+    display:inline-block;
+
+    margin-bottom:15px;
+
+}
+
+.contact-form-box h2{
+
+    font-size:34px;
+
+    line-height:1.2;
+
+}
+
+.contact-form-box p{
+
+    font-size:16px;
+
+}
+
+/* FORM FIELDS */
+
+.studio-form{
+
+    width:100%;
+
+}
+
+.input-group{
+
+    width:100%;
+
+}
+
+.studio-form input,
+.studio-form textarea,
+.studio-form select{
+
+    width:100%;
+
+    font-size:16px;
+
+    padding:16px 18px;
+
+    box-sizing:border-box;
+
+}
+
+/* BUTTON */
+
+.submit-btn{
+
+    width:100%;
+
+    height:58px;
+
+    font-size:16px;
+
+}
+
+}
+.contact-image,
+.contact-form-box{
+
+    margin:0 !important;
+
+    transform:none !important;
+
+}
+/*=========================================
+        SMALL MOBILE
+=========================================*/
+
+@media(max-width:480px){
+
+.contact-form-section{
+
+    padding:70px 0;
+
+}
+
+.contact-image img{
+
+    height:260px;
+
+}
+
+.contact-form-box{
+
+    padding:25px 18px;
+
+}
+
+.contact-form-box h2{
+
+    font-size:28px;
+
+}
+
+.studio-form input,
+.studio-form textarea,
+.studio-form select{
+
+    padding:15px 16px;
+
+}
+
+.submit-btn{
+
+    height:54px;
+
+    font-size:15px;
+
+}
+
+}
+
+
+/*=========================================
+        CUSTOM DROPDOWN
+=========================================*/
+
+.custom-dropdown{
+
+    position:relative;
+
+    width:100%;
+
+    user-select:none;
+
+}
+
+/* Selected */
+
+.dropdown-selected{
+
+    width:100%;
+
+    height:62px;
+
+    padding:0 22px;
+
+    background:#fff;
+
+    border:2px solid #ececec;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    color:#222;
+
+}
+
+.dropdown-selected:hover{
+
+    border-color:#c81111;
+
+}
+
+.dropdown-selected.active{
+
+    border-color:#c81111;
+
+    box-shadow:0 0 0 6px rgba(200,17,17,.08);
+
+}
+
+.dropdown-selected i{
+
+    color:#c81111;
+
+    transition:.35s;
+
+    font-size:14px;
+
+}
+
+.dropdown-selected.active i{
+
+    transform:rotate(180deg);
+
+}
+
+/*=============================
+        DROPDOWN LIST
+=============================*/
+
+.dropdown-list{
+
+    position:absolute;
+
+    top:72px;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    overflow:hidden;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-10px);
+
+    transition:.35s;
+
+    z-index:999;
+
+    max-height:260px;
+
+    overflow-y:auto;
+
+}
+
+.dropdown-list.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/*=============================
+        LIST ITEM
+=============================*/
+
+.dropdown-list li{
+
+    list-style:none;
+
+    padding:16px 22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    color:#333;
+
+    font-size:16px;
+
+    border-bottom:1px solid #f3f3f3;
+
+}
+
+.dropdown-list li:last-child{
+
+    border-bottom:none;
+
+}
+
+.dropdown-list li:hover{
+
+    background:#c81111;
+
+    color:#fff;
+
+    padding-left:30px;
+
+}
+
+/*=============================
+        SCROLLBAR
+=============================*/
+
+.dropdown-list::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.dropdown-list::-webkit-scrollbar-thumb{
+
+    background:#c81111;
+
+    border-radius:20px;
+
+}
+
+.dropdown-list::-webkit-scrollbar-track{
+
+    background:#f3f3f3;
+
+}
+
+/*=============================
+        MOBILE
+=============================*/
+
+@media(max-width:768px){
+
+.dropdown-selected{
+
+    height:58px;
+
+    font-size:15px;
+
+    padding:0 18px;
+
+}
+
+.dropdown-list{
+
+    top:66px;
+
+    max-height:220px;
+
+}
+
+.dropdown-list li{
+
+    padding:15px 18px;
+
+    font-size:15px;
+
+}
+
+}
+
+/*=============================
+        SMALL MOBILE
+=============================*/
+
+@media(max-width:480px){
+
+.dropdown-selected{
+
+    height:56px;
+
+    border-radius:14px;
+
+}
+
+.dropdown-list{
+
+    top:64px;
+
+}
+
+}
+
+/*=========================================
+        VISIT OUR STUDIO
+=========================================*/
+
+.visit-studio{
+
+    padding:120px 0;
+
+    background:linear-gradient(180deg,#ffffff,#fdf6f6,#ffffff);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.visit-studio::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(200,17,17,.05);
+
+    top:-180px;
+
+    left:-120px;
+
+}
+
+.visit-studio::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(200,17,17,.04);
+
+    bottom:-120px;
+
+    right:-120px;
+
+}
+
+/*=========================================
+        HEADING
+=========================================*/
+
+.visit-studio .section-heading{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.visit-studio .section-heading h2{
+
+    font-size:58px;
+
+    color:#1c1a19;
+
+    line-height:1.15;
+
+    margin:22px 0;
+
+    font-weight:800;
+
+}
+
+.visit-studio .section-heading p{
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/*=========================================
+        WRAPPER
+=========================================*/
+
+.studio-wrapper{
+
+    position:relative;
+
+    max-width:1250px;
+
+    margin:auto;
+
+}
+
+/*=========================================
+        IMAGE
+=========================================*/
+
+.studio-image{
+
+    overflow:hidden;
+
+    border-radius:35px;
+
+    box-shadow:0 35px 80px rgba(0,0,0,.15);
+
+}
+
+.studio-image img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:1s ease;
+
+}
+
+/*=========================================
+        FLOATING INFO CARD
+=========================================*/
+
+.studio-info{
+
+    position:absolute;
+
+    right:50px;
+
+    bottom:50px;
+
+    width:420px;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:28px;
+
+    padding:40px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.18);
+
+}
+
+.studio-info h3{
+
+    font-size:34px;
+
+    color:#1c1a19;
+
+    margin-bottom:25px;
+
+}
+
+.studio-info ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 35px;
+
+}
+
+.studio-info ul li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    margin-bottom:18px;
+
+    color:#555;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+.studio-info ul li i{
+
+    color:#c81111;
+
+    font-size:20px;
+
+    min-width:24px;
+
+    margin-top:3px;
+
+}
+/*=========================================
+        IMAGE HOVER
+=========================================*/
+
+.studio-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+        GLASS CARD ANIMATION
+=========================================*/
+
+.studio-info{
+
+    opacity:1;
+
+    transform:translateY(80px);
+
+    transition:1s cubic-bezier(.25,1,.5,1);
+
+}
+
+.studio-info.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+        IMAGE REVEAL
+=========================================*/
+
+.studio-image{
+
+    opacity:1;
+
+    transform:scale(.9);
+
+    transition:1.2s cubic-bezier(.25,1,.5,1);
+
+}
+
+.studio-image.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/*=========================================
+        ICON EFFECT
+=========================================*/
+
+.studio-info ul li i{
+
+    transition:.35s;
+
+}
+
+.studio-info ul li:hover i{
+
+    transform:rotate(15deg) scale(1.2);
+
+    color:#c81111;
+
+}
+
+/*=========================================
+        BUTTON
+=========================================*/
+
+.studio-info .primary-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+    height:60px;
+
+    background:#c81111;
+
+    color:#fff;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.studio-info .primary-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:50%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.25);
+
+    transform:skewX(-25deg);
+
+    transition:.8s;
+
+}
+
+.studio-info .primary-btn:hover::before{
+
+    left:150%;
+
+}
+
+.studio-info .primary-btn:hover{
+
+    background:#111;
+
+    transform:translateY(-5px);
+
+}
+
+/*=========================================
+        INFO CARD HOVER
+=========================================*/
+
+.studio-info:hover{
+
+    box-shadow:0 40px 90px rgba(200,17,17,.20);
+
+}
+
+/*=========================================
+        TABLET
+=========================================*/
+
+@media(max-width:991px){
+
+.studio-image img{
+
+    height:500px;
+
+}
+
+.studio-info{
+
+    position:relative;
+
+    right:auto;
+
+    bottom:auto;
+
+    width:100%;
+
+    max-width:650px;
+
+    margin:-80px auto 0;
+
+}
+
+.visit-studio .section-heading h2{
+
+    font-size:46px;
+
+}
+
+}
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.visit-studio{
+
+    padding:90px 0;
+
+}
+
+.visit-studio .section-heading{
+
+    margin-bottom:50px;
+
+}
+
+.visit-studio .section-heading h2{
+
+    font-size:36px;
+
+    line-height:1.2;
+
+}
+
+.visit-studio .section-heading p{
+
+    font-size:16px;
+
+}
+
+.studio-image img{
+
+    height:300px;
+
+}
+
+.studio-info{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:100%;
+
+    margin:25px auto 0;
+
+    right:0;
+
+    bottom:0;
+
+    padding:28px 22px;
+
+}
+
+.studio-info h3{
+
+    font-size:28px;
+
+}
+
+.studio-info ul li{
+
+    font-size:15px;
+
+}
+
+.studio-info .primary-btn{
+
+    height:56px;
+
+}
+
+}
+
+/*=========================================
+        SMALL MOBILE
+=========================================*/
+
+@media(max-width:480px){
+
+.visit-studio{
+
+    padding:70px 0;
+
+}
+
+.visit-studio .section-heading h2{
+
+    font-size:30px;
+
+}
+
+.studio-image img{
+
+    height:240px;
+
+}
+
+.studio-info{
+
+    padding:22px 18px;
+
+}
+
+.studio-info h3{
+
+    font-size:24px;
+
+}
+
+.studio-info ul li{
+
+    font-size:14px;
+
+}
+
+.studio-info .primary-btn{
+
+    height:52px;
+
+    font-size:15px;
+
+}
+
+}
+
+
+/*=========================================
+        FAQ SECTION
+=========================================*/
+
+.faq-section{
+
+    padding:120px 0;
+
+    background:linear-gradient(180deg,#ffffff,#fdf7f7,#ffffff);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.faq-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(200,17,17,.05);
+
+    top:-180px;
+
+    left:-140px;
+
+}
+
+.faq-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(200,17,17,.04);
+
+    bottom:-140px;
+
+    right:-120px;
+
+}
+
+/*=========================================
+        HEADING
+=========================================*/
+
+.faq-section .section-heading{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.faq-section .section-heading h2{
+
+    font-size:58px;
+
+    line-height:1.15;
+
+    color:#1c1a19;
+
+    margin:22px 0;
+
+    font-weight:800;
+
+}
+
+.faq-section .section-heading p{
+
+    font-size:17px;
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+/*=========================================
+        WRAPPER
+=========================================*/
+
+.faq-wrapper{
+
+    max-width:950px;
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+        FAQ ITEM
+=========================================*/
+
+.faq-item{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    margin-bottom:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.4s cubic-bezier(.25,1,.5,1);
+
+}
+
+/*=========================================
+        QUESTION
+=========================================*/
+
+.faq-question{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px 35px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    text-align:left;
+
+}
+
+.faq-question span{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#222;
+
+    line-height:1.5;
+
+    padding-right:20px;
+
+}
+
+.faq-question i{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#f8f3f3;
+
+    color:#c81111;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    transition:.4s;
+
+    flex-shrink:0;
+
+}
+
+/*=========================================
+        ANSWER
+=========================================*/
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .5s ease;
+
+}
+
+.faq-answer p{
+
+    padding:0 35px 30px;
+
+    color:#666;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+}
+/*=========================================
+        FAQ ACTIVE
+=========================================*/
+
+.faq-item.active{
+
+    box-shadow:0 30px 70px rgba(200,17,17,.15);
+
+    border-left:5px solid #c81111;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:300px;
+
+}
+
+.faq-item.active .faq-question i{
+
+    background:#c81111;
+
+    color:#fff;
+
+    transform:rotate(45deg);
+
+}
+
+/*=========================================
+        HOVER EFFECT
+=========================================*/
+
+.faq-item:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.faq-item:hover .faq-question span{
+
+    color:#c81111;
+
+}
+
+.faq-item:hover .faq-question i{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+        SCROLL ANIMATION
+=========================================*/
+
+.faq-item{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:1s cubic-bezier(.25,1,.5,1);
+
+}
+
+.faq-item.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================
+        TABLET
+=========================================*/
+
+@media(max-width:991px){
+
+.faq-section .section-heading h2{
+
+    font-size:48px;
+
+}
+
+.faq-question{
+
+    padding:25px 28px;
+
+}
+
+.faq-question span{
+
+    font-size:20px;
+
+}
+
+}
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.faq-section{
+
+    padding:90px 0;
+
+}
+
+.faq-section .section-heading{
+
+    margin-bottom:50px;
+
+}
+
+.faq-section .section-heading h2{
+
+    font-size:36px;
+
+    line-height:1.2;
+
+}
+
+.faq-section .section-heading p{
+
+    font-size:16px;
+
+}
+
+.faq-question{
+
+    padding:22px 20px;
+
+}
+
+.faq-question span{
+
+    font-size:18px;
+
+    line-height:1.5;
+
+}
+
+.faq-question i{
+
+    width:40px;
+
+    height:40px;
+
+    font-size:15px;
+
+}
+
+.faq-answer p{
+
+    padding:0 20px 22px;
+
+    font-size:15px;
+
+}
+
+}
+
+/*=========================================
+        SMALL MOBILE
+=========================================*/
+
+@media(max-width:480px){
+
+.faq-section{
+
+    padding:70px 0;
+
+}
+
+.faq-section .section-heading h2{
+
+    font-size:30px;
+
+}
+
+.faq-question{
+
+    padding:18px;
+
+}
+
+.faq-question span{
+
+    font-size:16px;
+
+}
+
+.faq-question i{
+
+    width:36px;
+
+    height:36px;
+
+    font-size:14px;
+
+}
+
+.faq-answer p{
+
+    padding:0 18px 18px;
+
+    font-size:14px;
+
+}
+
+}

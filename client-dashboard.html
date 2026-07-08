@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Stackly Interior Atelier</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/admin-dashboard.css">
+
+</head>
+
+<body>
+
+<!--=========================================
+        MOBILE MENU
+==========================================-->
+
+<button id="menuToggle"
+        class="menu-toggle">
+
+    <i class="fa-solid fa-bars"></i>
+
+</button>
+
+<!--=========================================
+        OVERLAY
+==========================================-->
+
+<div class="sidebar-overlay"></div>
+
+<!--=========================================
+        DASHBOARD
+==========================================-->
+
+<div class="dashboard">
+
+<!--=========================================
+        SIDEBAR
+==========================================-->
+
+<aside class="sidebar">
+
+<div class="sidebar-top">
+
+<a href="admin-dashboard.html"
+   class="logo">
+
+<img src="images/red-logo.webp"
+     alt="Stackly Logo">
+
+</a>
+
+<button class="close-sidebar">
+
+<i class="fa-solid fa-xmark"></i>
+
+</button>
+
+</div>
+
+<!-- USER -->
+
+<div class="user-box">
+
+<div class="user-avatar">
+
+BA
+
+</div>
+
+<div class="user-info">
+
+<h3>
+
+Balaraju
+
+</h3>
+
+<p>
+
+Administrator
+
+</p>
+
+</div>
+
+</div>
+
+<!-- MENU -->
+
+<ul class="sidebar-menu">
+
+<li class="active">
+
+<a href="admin-dashboard.html">
+
+<i class="fa-solid fa-table-columns"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-layer-group"></i>
+
+Projects
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-users"></i>
+
+Clients
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Analytics
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Appointments
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-envelope"></i>
+
+Messages
+
+</a>
+
+</li>
+
+<li>
+
+<a href="404.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</li>
+
+<li>
+
+<a href="index.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="sidebar-card">
+
+<h4>
+
+Stackly Interior
+
+</h4>
+
+<p>
+
+Luxury Design Dashboard
+
+</p>
+
+</div>
+
+</aside>
+
+<!--=========================================
+        MAIN CONTENT
+==========================================-->
+
+<main class="main-content">
+
+<!-- HEADER -->
+
+<header class="dashboard-header">
+
+<div>
+
+<h1>
+
+Operations Dashboard
+
+</h1>
+
+<p>
+
+Welcome back, Balaraju 👋
+
+</p>
+
+</div>
+
+<div class="header-actions">
+
+    <button onclick="window.location.href='404.html'">
+
+        <i class="fa-solid fa-bell"></i>
+
+    </button>
+
+    <button onclick="window.location.href='404.html'">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+    </button>
+
+    <button onclick="window.location.href='404.html'">
+
+        <i class="fa-solid fa-user"></i>
+
+    </button>
+
+</div>
+
+
+</header>
+
+
+<!--=========================================
+        SECTION 1
+        MY DREAM HOME PROGRESS
+==========================================-->
+
+<section class="client-progress-section">
+
+    <div class="dashboard-card progress-card">
+
+        <div class="card-header">
+
+            <div>
+
+                <h3>My Dream Home Progress</h3>
+
+                <p>Track every stage of your interior project.</p>
+
+            </div>
+
+            <a href="404.html">
+
+                View Details
+
+            </a>
+
+        </div>
+
+        <div class="room-progress">
+
+            <div class="room-item">
+
+                <div class="room-title">
+
+                    <span>Living Room</span>
+
+                    <span>100%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:100%;"></div>
+
+                </div>
+
+            </div>
+
+            <div class="room-item">
+
+                <div class="room-title">
+
+                    <span>Master Bedroom</span>
+
+                    <span>85%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:85%;"></div>
+
+                </div>
+
+            </div>
+
+            <div class="room-item">
+
+                <div class="room-title">
+
+                    <span>Kitchen</span>
+
+                    <span>72%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:72%;"></div>
+
+                </div>
+
+            </div>
+
+            <div class="room-item">
+
+                <div class="room-title">
+
+                    <span>Dining Area</span>
+
+                    <span>65%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:65%;"></div>
+
+                </div>
+
+            </div>
+
+            <div class="room-item">
+
+                <div class="room-title">
+
+                    <span>Outdoor Garden</span>
+
+                    <span>45%</span>
+
+                </div>
+
+                <div class="progress">
+
+                    <div style="width:45%;"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+        SECTION 2
+        BUDGET TRACKER
+==========================================-->
+
+<section class="budget-section">
+
+    <div class="dashboard-card budget-card">
+
+        <div class="card-header">
+
+            <h3>
+
+                Interior Budget Tracker
+
+            </h3>
+
+            <a href="404.html">
+
+                View Report
+
+            </a>
+
+        </div>
+
+        <div class="budget-grid">
+
+            <div class="budget-box">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <h4>Total Budget</h4>
+
+                <h2>₹24.5L</h2>
+
+            </div>
+
+            <div class="budget-box">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <h4>Spent</h4>
+
+                <h2>₹17.2L</h2>
+
+            </div>
+
+            <div class="budget-box">
+
+                <i class="fa-solid fa-piggy-bank"></i>
+
+                <h4>Remaining</h4>
+
+                <h2>₹7.3L</h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+        SECTION 3
+        DESIGN COLLECTIONS
+==========================================-->
+
+<section class="design-gallery">
+
+    <div class="card-header">
+
+        <h3>
+
+            Recommended Luxury Collections
+
+        </h3>
+
+        <a href="404.html">
+
+            Explore All
+
+        </a>
+
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="design-card">
+
+            <img src="images/pent-house.webp"
+                 alt="Living Room">
+
+            <div class="design-content">
+
+                <h4>
+
+                    Modern Living Room
+
+                </h4>
+
+                <p>
+
+                    Elegant furniture with premium lighting.
+
+                </p>
+
+                <a href="404.html">
+
+                    Explore
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="design-card">
+
+            <img src="images/bedroom.webp"
+                 alt="Bedroom">
+
+            <div class="design-content">
+
+                <h4>
+
+                    Luxury Bedroom
+
+                </h4>
+
+                <p>
+
+                    Warm ambience with stylish interiors.
+
+                </p>
+
+                <a href="404.html">
+
+                    Explore
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="design-card">
+
+            <img src="images/kitchen.webp"
+                 alt="Kitchen">
+
+            <div class="design-content">
+
+                <h4>
+
+                    Smart Kitchen
+
+                </h4>
+
+                <p>
+
+                    Premium modular kitchen collection.
+
+                </p>
+
+                <a href="404.html">
+
+                    Explore
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+        SECTION 4
+        UPCOMING APPOINTMENTS
+==========================================-->
+
+<section class="appointments-section">
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <h3>
+
+                Upcoming Appointments
+
+            </h3>
+
+            <a href="404.html">
+
+                View Calendar
+
+            </a>
+
+        </div>
+
+        <div class="appointment-list">
+
+            <div class="appointment-item">
+
+                <div class="appointment-icon">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                </div>
+
+                <div class="appointment-info">
+
+                    <h4>
+
+                        Site Inspection
+
+                    </h4>
+
+                    <p>
+
+                        Tomorrow • 10:30 AM
+
+                    </p>
+
+                </div>
+
+                <span class="appointment-status">
+
+                    Confirmed
+
+                </span>
+
+            </div>
+
+            <div class="appointment-item">
+
+                <div class="appointment-icon">
+
+                    <i class="fa-solid fa-palette"></i>
+
+                </div>
+
+                <div class="appointment-info">
+
+                    <h4>
+
+                        Material Selection
+
+                    </h4>
+
+                    <p>
+
+                        Friday • 02:00 PM
+
+                    </p>
+
+                </div>
+
+                <span class="appointment-status">
+
+                    Upcoming
+
+                </span>
+
+            </div>
+
+            <div class="appointment-item">
+
+                <div class="appointment-icon">
+
+                    <i class="fa-solid fa-house"></i>
+
+                </div>
+
+                <div class="appointment-info">
+
+                    <h4>
+
+                        Final Interior Review
+
+                    </h4>
+
+                    <p>
+
+                        Monday • 11:30 AM
+
+                    </p>
+
+                </div>
+
+                <span class="appointment-status">
+
+                    Scheduled
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+        SECTION 5
+        ASSIGNED DESIGNER
+==========================================-->
+
+<section class="designer-section">
+
+    <div class="dashboard-card designer-card">
+
+        <div class="designer-left">
+
+            <img src="images/interior-img.webp"
+                 alt="Designer">
+
+        </div>
+
+        <div class="designer-right">
+
+            <span class="designer-tag">
+
+                Your Interior Expert
+
+            </span>
+
+            <h3>
+
+                Arjun Sharma
+
+            </h3>
+
+            <p>
+
+                Senior Interior Designer with over 12 years
+                of experience creating luxury homes,
+                villas and commercial interiors.
+
+            </p>
+
+            <div class="designer-stats">
+
+                <div>
+
+                    <h4>
+
+                        152+
+
+                    </h4>
+
+                    <span>
+
+                        Projects
+
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        4.9★
+
+                    </h4>
+
+                    <span>
+
+                        Rating
+
+                    </span>
+
+                </div>
+
+                <div>
+
+                    <h4>
+
+                        12+
+
+                    </h4>
+
+                    <span>
+
+                        Years
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <a href="404.html"
+               class="designer-btn">
+
+                View Profile
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=========================================
+        SECTION 6
+        LATEST ACTIVITIES
+==========================================-->
+
+<section class="activity-section">
+
+    <div class="dashboard-card">
+
+        <div class="card-header">
+
+            <h3>
+
+                Latest Project Activities
+
+            </h3>
+
+            <a href="404.html">
+
+                View All
+
+            </a>
+
+        </div>
+
+        <div class="activity-list">
+
+            <div class="activity-item">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <div>
+
+                    <h4>
+
+                        Living Room Design Approved
+
+                    </h4>
+
+                    <p>
+
+                        15 Minutes Ago
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <div>
+
+                    <h4>
+
+                        Kitchen 3D Design Uploaded
+
+                    </h4>
+
+                    <p>
+
+                        2 Hours Ago
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <div>
+
+                    <h4>
+
+                        Furniture Delivery Scheduled
+
+                    </h4>
+
+                    <p>
+
+                        Yesterday
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="activity-item">
+
+                <i class="fa-solid fa-money-check-dollar"></i>
+
+                <div>
+
+                    <h4>
+
+                        Second Installment Received
+
+                    </h4>
+
+                    <p>
+
+                        2 Days Ago
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+</main>
+
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+
+</html>
