@@ -1074,7 +1074,7 @@ button{
 
 .progress-card .card-header a{
 
-    color:#3b82f6;
+    color:#c81111;
 
     font-weight:600;
 
@@ -1136,7 +1136,7 @@ button{
 
 .room-title span:last-child{
 
-    color:#3b82f6;
+    color:#c81111;
 
 }
 
@@ -1160,7 +1160,7 @@ button{
 
     border-radius:30px;
 
-    background:linear-gradient(90deg,#2563eb,#38bdf8);
+    background:#c81111;
 
     animation:clientProgress 1.4s;
 
@@ -1246,7 +1246,7 @@ button{
 
     align-items:center;
 
-    background:#2563eb;
+    background:#c81111;
 
     color:#fff;
 
@@ -1358,7 +1358,7 @@ button{
 
 .design-content a{
 
-    color:#3b82f6;
+    color:#c81111;
 
     display:inline-flex;
 
@@ -1571,7 +1571,7 @@ button{
 
     border-radius:18px;
 
-    background:#2563eb;
+    background:#c81111;
 
     color:#fff;
 
@@ -1679,7 +1679,7 @@ button{
 
     display:inline-block;
 
-    background:#2563eb;
+    background:#c81111;
 
     color:#fff;
 
@@ -1765,7 +1765,7 @@ button{
 
     border-radius:40px;
 
-    background:#2563eb;
+    background:#c81111;
 
     color:#fff;
 

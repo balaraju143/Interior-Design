@@ -1739,7 +1739,51 @@ font-size:18px;
 
 .footer-contact li:hover{
 
-    color:#ffffff;
+    color:#c81111;
+
+}
+
+/*=========================================
+        FOOTER CONTACT HOVER
+=========================================*/
+
+.footer-contact li{
+
+    transition:.35s ease;
+
+    cursor:pointer;
+
+}
+
+.footer-contact li i{
+
+    transition:.35s ease;
+
+}
+
+.footer-contact li span{
+
+    transition:.35s ease;
+
+}
+
+.footer-contact li:hover{
+
+    transform:translateX(8px);
+
+}
+
+.footer-contact li:hover i{
+
+    transform:scale(1.2);
+
+    color:#c81111;
+
+}
+
+.footer-contact li:hover span{
+
+    color:#c81111;
 
 }
 

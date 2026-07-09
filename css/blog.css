@@ -906,6 +906,23 @@ width:100%;
     transition:.35s;
 
 }
+
+
+.journal-info{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.journal-info a{
+
+    position:relative;
+
+    z-index:10;
+
+}
 /*=========================================
         CARD HOVER
 =========================================*/
