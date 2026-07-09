@@ -68,9 +68,6 @@ button{
 
 
 /*=========================================
-        PAGE LOADER
-=========================================*/
-/*=========================================
             PREMIUM LOADER
 =========================================*/
 
@@ -96,8 +93,8 @@ button{
 
     overflow:hidden;
 
-    transition:opacity .8s ease,
-               visibility .8s ease;
+    transition:opacity .5s ease,
+               visibility .5s ease;
 
 }
 
@@ -830,8 +827,9 @@ font-size:18px;
     align-items:center;
 
     text-decoration:none;
-     height: 70px;
     overflow: hidden;
+    max-height:100px;
+    width: auto;
 
 }
 
@@ -844,7 +842,9 @@ font-size:18px;
     display:block;
 
     transition:0.4s ease;
-      object-fit: contain;
+    object-fit: contain;
+    text-align: center;
+    align-items: center;
 
 }
 

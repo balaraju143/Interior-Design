@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
 
         }
 
-    }, 25);
+    }, 22);
 
 });
 
