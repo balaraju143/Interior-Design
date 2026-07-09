@@ -9,9 +9,11 @@
     width:100%;
 
     overflow:hidden;
-     margin-top:100px;
+    margin-top:100px;
 
-    height:calc(110vh - 100px);
+   min-height:calc(100vh - 100px);
+    min-height:820px;
+    padding:60px 0;
 
 
 }
@@ -107,13 +109,14 @@
 
     position:relative;
 
-    height:100%;
+    min-height:(100vh-100px);
 
     display:flex;
 
     align-items:center;
 
     z-index:10;
+    padding-top: 40px;
 
 }
 
@@ -128,6 +131,8 @@
     color:#fff;
 
     animation:fadeUp 1.2s ease;
+    width: 100%;
+   
 
 }
 
@@ -157,7 +162,7 @@
 
 .hero-content h1{
 
-    font-size:78px;
+     font-size:clamp(56px,5vw,78px);
 
     font-weight:800;
 
